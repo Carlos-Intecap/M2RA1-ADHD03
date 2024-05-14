@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+
+}
+
+body {
+        background: linear-gradient(-45deg, #23658b, #155580, #0f2a52, #000a42);
+        background-size: 100000% 100000%;
+        animation: gradient 30s ease infinite;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 500%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+
+    }
+
+}
+
+header {
+    height: 150px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 50px;
+    margin-right: 50px;
+}
+
+.logointecap{
+    width: 300px;
+    height: 150px;
+}
+nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 80px;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 18px;
+    padding: 30px 20px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+li a.active,
+li a:hover {
+    background-color: white;
+    color: black;
+    transition: 0.5;
+}
+
