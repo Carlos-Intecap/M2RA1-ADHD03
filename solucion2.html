@@ -1,28 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/solucion2.css">
+    <script src="js/jquery-3.7.1.min.js"></script>
     <title>Solución 2</title>
+    <script src="js/solucion2.js"></script>
+
 </head>
+
 <body>
-    
+
     <header>
         <img src="img/logo_intecap.png" alt="" class="logointecap">
     </header>
     <nav>
 
         <ul class="">
-            <li class="active"><a href="index.html" class="links">Inicio</a></li>
-            <li class=""><a href="empleados.html" class="links">Empleados</a></li>
-            <li class=""><a href="sueldoliquido.html" class="links">Sueldo Líquido</a></li>
-            <li class=""><a href="indemnizacion.html" class="links">Indemnización</a></li>
+            <li class="active"><a href="index.html" class="links">Solución 1</a></li>
+            <li class=""><a href="empleados.html" class="links">Solución 2</a></li>
+            <li class=""><a href="sueldoliquido.html" class="links">Solución 3</a></li>
 
         </ul>
     </nav>
     <br><br>
 
+    <span>
+        <section>
+            <article>
+                <form>
+                    <div class="inputbox">
+                        <input type="number" required id="primerNumero">
+                        <label>Primer valor</label>
+                    </div>
+
+                    <div class="inputbox">
+                        <input type="number" required id="segundoNumero">
+                        <label>Segundo valor</label>
+                    </div>
+
+                    <div class="inputbox">
+                        <input type="number" required id="tercerNumero">
+                        <label>Tercer valor</label>
+                    </div>
+
+                    <div class="inputbox">
+                        <input type="number" required id="cuartoNumero">
+                        <label>Cuarto Valor</label>
+                    </div>
+                </form>
+            </article>
+        </section>
+
+        <div id="formulario2">
+            <h2>Creado por: Daylin Yol</h2>
+            <img src="img/logo_intecap_51.jpg" alt="" style="width: 230px; height: 200px;">
+        </div>
+    </span>    
+
+  
+
+    <button type="button" id="botonPromedio" onclick="calcularPromedio()" class="submit">Calcular Promedio</button>
+    <button type="button" id="botonValoresIguales" onclick="calcularValores()" class="submit">Valores Iguales o Distintos</button>
+    <button type="button" id="botonValoresIguales" onclick="mostrarValoresMayores()" class="submit">Mostrar Valor Mayor</button>
+
+    <h3>Respuesta</h3>
+<div id="respuesta">
+    <p id="respuestaa"></p>
+    <p id="respuestab"></p>
+    <p id="respuestac"></p>
+</div>
 
 </body>
+
 </html>
