@@ -11,16 +11,13 @@
 
 <body>
     <header>
-        <div class="logointecap">
-            <img src="img/logo_intecap.png" class="imaintecap" width="250px" height="150px" alt="">
-        </div>
+        <img src="img/logo_intecap.png" class="logointecap">
     </header>
     <nav>
         <ul class="">
             <li class="active"><a href="index.html" class="links">Solución 1</a></li>
-            <li class=""><a href="" class="links">Solución 2</a></li>
-            <li class=""><a href="" class="links">Solución 3</a></li>
-            <li class=""><a href="" class="links">Solución 4</a></li>
+            <li class=""><a href="solucion2.html" class="links">Solución 2</a></li>
+            <li class=""><a href="solucion3.html" class="links">Solución 3</a></li>
         </ul>
     </nav>
     <br><br>
@@ -29,26 +26,21 @@
         <main class="cont-1">
             <div class="formulario">
                 <h1>Solución 1</h1>
-                <div class="form-1 inputbox">
-                    <label for="txt_texto1">Texto 1</label>
-                    <input type="text" id="txt_texto1">
-                    <label for="txt_texto2">Texto 2</label>
-                    <input type="text" id="txt_texto2">
-                    <label for="txt_texto3">Texto 3</label>
-                    <input type="text" id="txt_texto3">
-                    <label for="txt_texto4">Texto 4</label>
-                    <input type="text" id="txt_texto4">
-                    <label for="txt_texto5">Texto 5</label>
-                    <input type="text" id="txt_texto5">
+                <div class="wrapper form inputbox">
+                    <input type="text" class="input" id="txt_texto1" placeholder="Texto 1">
+                    <input type="text" class="input" id="txt_texto2" placeholder="Texto 2">
+                    <input type="text" class="input" id="txt_texto3" placeholder="Texto 3">
+                    <input type="text" class="input" id="txt_texto4" placeholder="Texto 4">
+                    <input type="text" class="input" id="txt_texto5" placeholder="Texto 5">
                     <button class="submit" onclick="concatenar()">Concatenar</button>
                     <button class="submit" onclick="textoLargo()">Texto mas largo</button>
                     <button class="submit" onclick="formarPalabra()">Formar palabra</button>
                 </div>
             </div>
-            <p id="respuesta">respuesta </p>
+            <p id="respuesta"></p>
         </main>
         <article class="cont-2">
-            <p>Creado por: Nombre Apellido</p>
+            <p id="datos">Creado por:<br>Carlos Tavico</p>
             <aside>
                 <img class="logo51" src="img/logo_intecap_51.jpg">
             </aside>
