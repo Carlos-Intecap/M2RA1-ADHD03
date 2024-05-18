@@ -1,195 +1,29 @@
-.container {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 75% 25%;
-}
-
-.cont-1, .cont-2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin: 15px;
-    background-color: hsla(0, 0%, 0%, 0.5);
-    border-radius: 15px;
-    padding: 20px;
-}
-header {
-    height: 170px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: auto auto;
-    margin: 50px;
-    margin-right: 50px;
-}
-#datos {
-    color: white;
-    font-size: 40px;
-    padding-bottom: 200px;
-    text-align: center;
-}
-/*PAGINA 2*/
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-/*INICIA FORMULARIO NEON*/
-
-
-::-webkit-input-placeholder {
-    color: #888888;
-}
-
-h1 {
-    color: white;
-    text-align: center;
-}
-
-h2 {
-    text-align: center;
-}
-
-.wrapper {
-    width: 400px;
-    height: 500px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    box-shadow: 0 0 50px 0 rgb(0, 39, 211);
-    background-color: rgba(0, 0, 0, 0.6);
-}
-
-.form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.input {
-    border: none;
-    outline: none;
-    background: none;
-    width: 250px;
-    margin-top: 40px;
-    padding-right: 10px;
-    font-size: 17px;
-}
-
-.submit {
-    border: none;
-    outline: none;
-    width: 150px;
-    margin-top: 25px;
-    padding: 10px 0;
-    font-size: 14px;
-    color: white;
-    border-radius: 40px;
-    letter-spacing: 10x;
-    cursor: pointer;
-    background: linear-gradient(45deg, rgb(66, 103, 173), rgb(4, 34, 89));
-}
-
-.submit:hover {
-    background: linear-gradient(45deg, rgb(54, 66, 87), rgb(2, 23, 63));
-}
-
-
-/*finaliza formulario neon*/
-
-
-
-.inputbox input {
-    background: transparent;
-    border: none;
-    outline: none;
-    font-size: 1rem;
-    color: #ffffff;
-    border-bottom: 2px solid #ffffff;
-}
-
-.inputbox {
-    border-bottom: 2px solid #ffffff;
-}
-
-.inputbox label {
-    transform: translateY(-50%);
-    color: #ffffff;
-    font-size: 1rem;
-    pointer-events: none;
-    transition: all 0.5s ease-in-out;
-}
-
-.logo51 {
-    width: 80%;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 60px 0 60px 0;
-}
-
-.buttonSueldoLiquido {
-    color: rgb(0, 0, 0);
-    margin-top: 50px;
-    border-radius: 55px;
-    width: 500px;
-    height: 50px;
-    background-color: rgb(255, 186, 39);
-    border: none;
-    outline: none;
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: 600;
-    transition: all 0.4s ease;
-    margin-left: 700px;
-}
-
-.buttonSueldoLiquido:hover {
-    background-color: rgb(173, 137, 37);
-    color: rgb(255, 255, 255);
-}
-
-
-#respuesta {
-    background-color: rgba(255, 255, 255, 0.5);
-    color: black;
-    font-size: 20px;
-    height: 100px;
-    width: 500px;
-    padding: 30px;
-    text-align: center;
-    text-shadow: 1px 0px;
-}
-/*************************************************************/
-* {
-    margin: 0;
-
-}
-
 body {
-        background: linear-gradient(-45deg, #23658b, #155580, #0f2a52, #000a42);
-        background-size: 100000% 100000%;
-        animation: gradient 30s ease infinite;
+    background: linear-gradient(-45deg, #23658b, #155580, #0f2a52, #000a42);
+    background-size: 100000% 100000%;
+    animation: gradient 30s ease infinite;
+    color: white;
 }
 @keyframes gradient {
     0% {
         background-position: 0% 50%;
     }
-
     50% {
         background-position: 100% 500%;
     }
-
     100% {
         background-position: 0% 50%;
-
+    
     }
-
 }
-
-.logointecap{
+* {
+    margin: 0;
+}
+.logo_intecap{
     width: 300px;
+    margin: 20px;
 }
+
 nav {
     background-color: rgba(0, 0, 0, 0.5);
     height: 80px;
@@ -218,10 +52,94 @@ nav ul li a {
     text-decoration: none;
 }
 
-li a.active,
-li a:hover {
+li a.active, li a:hover {
     background-color: white;
     color: black;
     transition: 0.5;
 }
+.container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
 
+.cont-1, .cont-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.cont-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 30px;
+    text-align: center;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 500px;
+    margin: 15px 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.formulario input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    border-bottom: 2px solid white;
+    width: 80%;
+    margin-top: 40px;
+    padding-right: 10px;
+    font-size: 16px;
+}
+
+::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.submit {
+    border: none;
+    width: 90%;
+    margin-top: 15px;
+    padding: 10px 0;
+    font-size: 16px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    background: linear-gradient(45deg, rgb(66, 103, 173), rgb(4, 34, 89));
+}
+
+.submit:hover {
+    background: linear-gradient(45deg, rgb(54, 66, 87), rgb(2, 23, 63));
+}
+
+.logo_51 {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 60px 0 60px 0;
+}
+
+#respuesta {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    font-size: 20px;
+    height: 100px;
+    width: 500px;
+    margin-top: 15px;
+    padding: 30px;
+    text-align: center;
+    border-radius: 5px;
+}

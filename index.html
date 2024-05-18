@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +7,9 @@
     <script src="js/solucion1.js"></script>
     <title>Solución 1</title>
 </head>
-
 <body>
     <header>
-        <img src="img/logo_intecap.png" class="logointecap">
+        <img src="img/logo_intecap.png" class="logo_intecap">
     </header>
     <nav>
         <ul class="">
@@ -20,29 +18,25 @@
             <li class=""><a href="solucion3.html" class="links">Solución 3</a></li>
         </ul>
     </nav>
-    <br><br>
-
     <section class="container">
         <main class="cont-1">
-            <div class="formulario">
-                <h1>Solución 1</h1>
-                <div class="wrapper form inputbox">
-                    <input type="text" class="input" id="txt_texto1" placeholder="Texto 1">
-                    <input type="text" class="input" id="txt_texto2" placeholder="Texto 2">
-                    <input type="text" class="input" id="txt_texto3" placeholder="Texto 3">
-                    <input type="text" class="input" id="txt_texto4" placeholder="Texto 4">
-                    <input type="text" class="input" id="txt_texto5" placeholder="Texto 5">
-                    <button class="submit" onclick="concatenar()">Concatenar</button>
-                    <button class="submit" onclick="textoLargo()">Texto mas largo</button>
-                    <button class="submit" onclick="formarPalabra()">Formar palabra</button>
-                </div>
+            <h2>Llene los siguientes campos</h2>
+            <div class="formulario inputbox">
+                <input type="text" id="txt_texto1" placeholder="Texto 1">
+                <input type="text" id="txt_texto2" placeholder="Texto 2">
+                <input type="text" id="txt_texto3" placeholder="Texto 3">
+                <input type="text" id="txt_texto4" placeholder="Texto 4">
+                <input type="text" id="txt_texto5" placeholder="Texto 5">
+                <button class="submit" onclick="concatenar()" title="Concatenar todos los textos">Concatenar</button>
+                <button class="submit" onclick="textoLargo()" title="Mostrar la palabra con más caracteres">Texto mas largo</button>
+                <button class="submit" onclick="formarPalabra()" title="Formar una palabra con la última letra de cada texto">Formar palabra</button>
             </div>
             <p id="respuesta"></p>
         </main>
         <article class="cont-2">
             <p id="datos">Creado por:<br>Carlos Tavico</p>
             <aside>
-                <img class="logo51" src="img/logo_intecap_51.jpg">
+                <img class="logo_51" src="img/logo_intecap_51.jpg">
             </aside>
         </article>
     </section>
